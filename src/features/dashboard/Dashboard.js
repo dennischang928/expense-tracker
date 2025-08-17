@@ -12,7 +12,6 @@ import {
   NumberFormatter,
   ScrollArea,
   TextInput,
-  NumberInput,
   Select,
   SegmentedControl,
   SimpleGrid,
@@ -21,8 +20,6 @@ import {
   ActionIcon,
   Checkbox,
   Button,
-  RingProgress,
-  Center,
 } from "@mantine/core";
 import {
   AreaChart,
@@ -39,7 +36,7 @@ import {
   Bar,
   Legend,
 } from 'recharts';
-import { IconEdit, IconCheck, IconX, IconTrash } from "@tabler/icons-react";
+import { IconEdit,  IconTrash } from "@tabler/icons-react";
 
 function asNumber(n, fallback = 0) {
   const v = typeof n === "number" ? n : parseFloat(n ?? "0");
@@ -276,16 +273,16 @@ export default function Dashboard() {
 
   const num = (v, f = 0) => (typeof v === "number" ? v : parseFloat(v ?? f)) || f;
 
-  const saveEdit = () => {
-    if (!draft || !draft.item?.trim() || !draft.date) return; // minimal validation
-    const unit = +num(draft.unitPrice).toFixed(2);
-    const qty = +num(draft.qty, 0);
-    const price = +(draft.price != null ? num(draft.price) : unit * qty).toFixed(2);
-    if (typeof updateExpense === 'function') {
-      updateExpense(editIndex, { ...draft, unitPrice: unit, qty, price });
-    }
-    cancelEdit();
-  };
+  // const saveEdit = () => {
+  //   if (!draft || !draft.item?.trim() || !draft.date) return; // minimal validation
+  //   const unit = +num(draft.unitPrice).toFixed(2);
+  //   const qty = +num(draft.qty, 0);
+  //   const price = +(draft.price != null ? num(draft.price) : unit * qty).toFixed(2);
+  //   if (typeof updateExpense === 'function') {
+  //     updateExpense(editIndex, { ...draft, unitPrice: unit, qty, price });
+  //   }
+  //   cancelEdit();
+  // };
 
   // ---------- Batch operations ----------
   const handleSelectAll = () => {

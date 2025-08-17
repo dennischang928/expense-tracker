@@ -1,7 +1,7 @@
 // src/components/Layout.js
 import React, { useMemo } from "react";
 import { Outlet, useLocation, useNavigate } from "react-router-dom";
-import { AppShell, Header, Tabs, Container, Text } from "@mantine/core";
+import { AppShell, Tabs, Container, Text } from "@mantine/core";
 
 import useLocalStorage from "../hooks/useLocalStorage";
 

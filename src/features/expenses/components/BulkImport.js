@@ -28,7 +28,6 @@ const SUMMARY_ROWS = [
 
 function parseCurrency(str) {
   if (!str) return 0;
-  // remove $ , ** and spaces
   const clean = String(str).replace(/\*/g, "").replace(/[\$,]/g, "").trim();
   const n = parseFloat(clean);
   return Number.isFinite(n) ? n : 0;

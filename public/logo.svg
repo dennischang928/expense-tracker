@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="512" height="512" viewBox="0 0 512 512" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Industrial gear background -->
+  <circle cx="256" cy="256" r="240" fill="#2A2A2A" stroke="#5A5A5A" stroke-width="16"/>
+  
+  <!-- Outer gear teeth -->
+  <path d="M256 16
+    L271 0 H296 L311 16
+    L326 0 H351 L366 16
+    L381 0 H406 L421 16
+    L436 0 H461 L476 16
+    L491 0 H512
+    V32 L496 48
+    H512 V80 L496 96
+    H512 V128 L496 144
+    H512 V176 L496 192
+    H512 V224 L496 240
+    H512 V272 L496 288
+    H512 V320 L496 336
+    H512 V368 L496 384
+    H512 V416 L496 432
+    H512 V464 L496 480
+    H512 V512
+    H480 L464 496
+    V512 H432 L416 496
+    V512 H384 L368 496
+    V512 H336 L320 496
+    V512 H288 L272 496
+    V512 H240 L224 496
+    V512 H192 L176 496
+    V512 H144 L128 496
+    V512 H96 L80 496
+    V512 H48 L32 496
+    V512 H0
+    V480 L16 464
+    H0 V432 L16 416
+    H0 V384 L16 368
+    H0 V336 L16 320
+    H0 V288 L16 272
+    H0 V240 L16 224
+    H0 V192 L16 176
+    H0 V144 L16 128
+    H0 V96 L16 80
+    H0 V48 L16 32
+    H0 V0
+    H32 L48 16
+    L64 0 H96 L112 16
+    L128 0 H160 L176 16
+    L192 0 H224 L240 16
+    Z" 
+    fill="#0D0D0D"/>
+
+  <!-- Inner gear -->
+  <circle cx="256" cy="256" r="160" fill="#FF4B00" stroke="#5A5A5A" stroke-width="8"/>
+  
+  <!-- Dollar symbol -->
+  <path d="M256 136
+    C200 136 176 168 176 200
+    C176 264 336 232 336 296
+    C336 328 312 360 256 360
+    C200 360 176 328 176 296"
+    stroke="#FFFFFF" stroke-width="32" stroke-linecap="round"/>
+  <line x1="256" y1="116" x2="256" y2="396" stroke="#FFFFFF" stroke-width="32" stroke-linecap="round"/>
+  
+  <!-- Accent glow -->
+  <circle cx="256" cy="256" r="120" stroke="#00AEEF" stroke-width="2" stroke-dasharray="4 4"/>
+</svg>
